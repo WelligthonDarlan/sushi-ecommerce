@@ -138,3 +138,100 @@
     height: 30px;
     align-items: center;
 }
+
+@media screen and (max-width: 400px){
+
+    #menu{
+        /* border: 2px solid rgb(4, 0, 255); */
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        
+    }
+    .titleMenu{
+        /* border: 2px solid rgb(255, 44, 220); */
+        width: 100%;
+        gap: 10px;
+    }
+    .titleMenu h1{
+        font-size: 40px;
+        padding: 0px;
+    }
+    .titleMenu p{
+       display: none;
+    }
+    .menuNavbar{
+        /* border: 2px solid rgb(44, 255, 185); */
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 10px;
+        width: 100%;
+        height: 100px;  
+        padding: 0px; 
+    }
+    .menuNavbar button{
+        /* border: 2px solid rgb(255, 44, 220); */
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #0e0e0e;
+        cursor: pointer;
+        background-color: #f0f3f78e;
+        width: 90px;
+        height: 50px;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .menuNavbar button:hover{
+        background-color: #e34a3c;
+        color: #fff;
+    }
+    .titleMenu h1{
+        font-size: 25px;
+    }
+   
+    .cardContainer{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 40px;
+        gap: 0px;
+    }
+    .cardContent{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 0px;
+        gap: 0px;
+    }
+    
+    .groupAllCards{
+        width: 100%;
+        gap: S0px;
+    }
+    .cardMenu{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: -2px 2px 5px 3px rgba(0, 0, 0, 0.4);
+    }
+    .descriptionCard{
+        padding: 0px;
+    }
+    .infPlate{
+        font-size: 20px;
+        
+    }
+    .price{
+        color: black;
+        font-size: 16px;
+    }
+    .cardContainer div a img{
+        width: 20px;
+        height: 19px;
+    }
+}
