@@ -6,7 +6,8 @@
     justify-content: center;
     flex-direction: row;
     padding: 300px 200px 300px 200px;
-    
+    overflow: hidden;
+    /* border: 2px solid #e41300; */
 }
 #colLeft{
     background-image: url(../img/background-About.jpg);
@@ -29,7 +30,13 @@
     padding: 40px 40px 40px 40px;
     text-align: center;
     background-color: #fff;
-    transform: translateX(-200px) !important; 
+    transform: translateX(-200px) ; 
+    z-index: 900;
+    transition: 0.5s;
+}
+#colRight:hover{
+    background-color: #ffffff44;
+    backdrop-filter: blur(7px);
 }
 #colRight h1{
     font-size: 40px;
