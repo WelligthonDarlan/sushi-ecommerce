@@ -1,0 +1,17 @@
+#containerCart{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.247);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  display: none;
+}
+#contentCart{
+  background-color: #fff;
+  width: 500px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+}

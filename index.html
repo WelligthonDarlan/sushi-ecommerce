@@ -6,9 +6,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
+rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/icons/suchiIcon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -16,8 +20,9 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <script src="./script.js" defer></script>
+    <script src="./cart.js" defer></script>
 
-    <title>SUSHI.COM</title>
+    <title>SushiCom</title>
 </head>
 <body>
     <div id="iconPage">
@@ -28,6 +33,11 @@
             <a href="#"><img src="./img/icons/arrowUp.png" alt="arrowUp.png"></a>
         </div>
     </div>
+    <div id="containerCart">
+        <div id="contentCart">
+
+        </div>
+    </div>
     <header>
         <nav>
             <img src="./img/logo.png" alt="logo.png" id="logo">
@@ -35,7 +45,8 @@
                 <a href="#">Inicio</a>
                 <a href="#about">Sobre</a>
                 <a href="#menu">Cardápio</a>
-                <a href="#">Depoimentos</a>
+                <a href="#comments">Depoimentos</a>
+                <a href="#container">Contato</a>
             </div>
             <img src="./img/cart-shopping-solid.png" alt="cart.png" id="cart">
         </nav>
@@ -43,7 +54,7 @@
             <div id="row">
                 <h1>SushiCom</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus nobis, minima harum quasi maxime at voluptas illum nostrum tempore.</p>
-                <a href="#" id="buyNow">Compre agora</a>
+                <a href="#menu" id="buyNow">Compre agora</a>
             </div>
         </div>
     </header>
@@ -68,14 +79,14 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam voluptatibus, non voluptate vero quod unde distinctio excepturi voluptates deserunt recusandae!</p>
                 </div>
                 <div class="menuNavbar">
-                    <button>Todos</button>
-                    <button>Prato A</button>
-                    <button>Prato B</button>
-                    <button>Prato C</button>
-                    <button>Prato D</button>
+                    <button id="btnPlateAll">Todos</button>
+                    <button id="btnPlateA">Prato A</button>
+                    <button id="btnPlateB">Prato B</button>
+                    <button id="btnPlateC">Prato C</button>
+                    <button id="btnPlateD">Prato D</button>
                 </div>
                 <div class="cardContent">
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateA plateAll">
                         <img src="./img/plate-A.jpg" alt="plate-A.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -83,11 +94,11 @@
                                     <p>Plate A</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateB plateAll">
                         <img src="./img/plate-B.jpg" alt="plate-B.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -95,11 +106,11 @@
                                     <p>Plate B</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateB plateAll">
                         <img src="./img/plate-B.jpg" alt="plate-B.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -107,11 +118,11 @@
                                     <p>Plate B</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateC plateAll">
                         <img src="./img/plate-C.jpg" alt="plate-C.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -119,11 +130,11 @@
                                     <p>Plate C</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateC plateAll">
                         <img src="./img/plate-C.jpg" alt="plate-C.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -131,11 +142,11 @@
                                     <p>Plate C</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateD plateAll">
                         <img src="./img/plate-D.jpg" alt="plate-D.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -143,11 +154,11 @@
                                     <p>Plate D</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateD plateAll">
                         <img src="./img/plate-D.jpg" alt="plate-D.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -155,11 +166,11 @@
                                     <p>Plate D</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="groupAllCards">
+                    <div class="groupAllCards plateD plateAll">
                         <img src="./img/plate-D.jpg" alt="plate-D.jpg" class="cardMenu">
                         <div>
                             <div class="descriptionCard">
@@ -167,7 +178,7 @@
                                     <p>Plate D</p>
                                     <p class="price">R$ 100,00</p>
                                 </div>
-                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png"></a>
+                                <a href=""><img src="./img/cart-shopping-solid.png" alt="cart-shopping-solid.png" class="addCart"></a>
                             </div>
                         </div>
                     </div>
